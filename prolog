@@ -1,3 +1,13 @@
+%appartenenza
+
+%pensare ricorsivamente
+appartiene(X, [X|_]).
+
+appartiene(X, [_|T]):-
+    appartiene(X,T).
+
+
+
 %LUNGHEZZA LISTA
 
 lunghezza([],0).
